@@ -1,0 +1,33 @@
+	
+	countdown(5):
+		work: output "5 ... "
+		recursive call: countdown(--5)
+			countdown(4):
+				work: output "4 ... "
+				recursive call: countdown(--4)
+					countdown(3):
+						work: output "3 ... "
+						recursive call: countdown(--3)
+							countdown(2):
+								work: output "2 ... "
+								recursive call: countdown(--2)
+									countdown(1): base case
+										work: output "Blastoff!\n"
+										return. done!
+									
+									
+	factorial(4):
+		work: 4 * ?
+		recursive call: factorial(4-1)
+			factorial(3):
+				work: 3 * ?
+				recursive call: factorial(3-1)
+					factorial(2):
+						work: 2 * ?
+						recursive call: factorial(2-1)
+							factorial(1): base case
+								return 1
+						2 * 1 = 2
+				3 * 2 = 6
+		4 * 6 = 24
+	24

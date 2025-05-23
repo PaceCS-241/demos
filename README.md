@@ -1,1 +1,1 @@
-# demos
+# CS 241 module demos
